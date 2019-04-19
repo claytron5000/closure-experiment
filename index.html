@@ -1,22 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        button {
+            border: none;
+            background: thistle;
+            padding: 1rem;
+            margin: 1rem;
+            box-shadow: #3333 1px 1px 1px;
+        }
+
+        span.secret-display {
+            margin: 0 5rem;
+            font-size: 2rem;
+        }
+
+        .user-container {
+            display: flex;
+            align-items: center;
+        }
+    </style>
 </head>
+
 <body>
     <form id="login-form">
         <label for="login">Enter password</label>
-        <input id="login" type="password"/>
-        <button>Log in</button>
+        <input id="login" type="password" />
+        <button>Log in to access secrets</button>
     </form>
-    <form id="request-form">
-    
-        <button id="request">Make Request</button>
-        <div id="response"></div>
-    </form>
+    <ul id="user-list"></ul>
+
+    <script src="setup.js"></script>
     <script src="index.js"></script>
 </body>
+
 </html>
